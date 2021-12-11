@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">');document.write('</'+'script'+'>')}</script><script>if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['rain1']="http://2.bp.blogspot.com/-kZFDYYz6KGk/UFmgFdC62TI/AAAAAAAAEX8/smhTZsHE-O8/s1600/Leaf1.png";image_urls['rain2']="http://1.bp.blogspot.com/-i705daAePrk/UFmgGIvxZaI/AAAAAAAAEYE/DQb3DElqJO4/s1600/Leaf2.png";image_urls['rain3']="http://2.bp.blogspot.com/-jrQRo6CcvEg/UFmgJOJAJ_I/AAAAAAAAEYk/efOE-PMw1Ls/s1600/Leaf6.png";image_urls['rain4']="http://3.bp.blogspot.com/-Te-t2fE8zBY/UFmgIXY063I/AAAAAAAAEYc/P5OT_IQhqPQ/s1600/Leaf5.png";$(document).ready(function(){var c=$(window).width();var d=$(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(7500,8000),function(){$(this).fadeOut('slow',function(){f(a)})})},e(1,8000))};$('<div></div>').attr('id','rainDiv')
+.css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=20;i++){var g=$('<img/>').attr('src',image_urls['rain'+e(1,4)])
+.css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('rainDrop').appendTo('#rainDiv');f(g);g=null};var h=0;var j=0;$(window).resize(function(){c=$(window).width();d=$(window).height()})});</script>
+	<script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">');document.write('</'+'script'+'>')}
+	</script>
+<head>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+</head>
+<body>
+    <div>
+        <section>
+            <header style="background-image: url('bg.jpg');font-family:calibri;COLOR:#ff6633;font-size:120%">
+                <a style="font-size:200%;COLOR:#000000" href="#" class="logo">Logo</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page1.html">About</a></li>
+                    <li><a href="page2.html" class="active">Services</a></li>
+                    <li><a href="page3.html">Rates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </header>
+            <div id="pricing" class="pricing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                <h2><i><b>Các dịch vụ của chúng tôi</b></i></h2> <BR>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="pricing_box">
+                                <h3><b>Gói dịch vụ cơ bản</b></h3>
+                                <span>150.000<strong class="white_bold">VND</strong></span>
+                                <p style="font-size:135%">Bao ăn và ở 2 ngày 1 đêm</p>
+                                <a class="SelectPlan" href="#">Chọn lựa kế hoạch</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="pricing_box_cross">
+                                <h3><b>Gói dịch vụ thông dụng</b></h3><BR>
+                                <span>300.000<strong class="white_bold" style="color:#66cc33"><b>VND</b></strong></span>
+                                <p style="font-size:135%">Bao ăn và ở 5 ngày 4 đêm</p><BR><BR>
+                                <a class="SelectPlan" href="#">Chọn lựa kế hoạch</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="pricing_box">
+                                <h3><b>Gói dịch vụ cao cấp</b></h3>
+                                <span>700.000<strong class="white_bold">VND</strong></span>
+                                <p style="font-size:135%">Bao ăn và thuê chỗ ở 7 ngày 6 đêm</p>
+                                <a class="SelectPlan" href="#">Chọn lựa kế hoạch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>
